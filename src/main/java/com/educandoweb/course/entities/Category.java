@@ -33,9 +33,7 @@ public class Category implements Serializable {
     public Long getId() {
         return id;
     }
-    public Set<Product> getProducts() {
-        return products;
-    }
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -46,6 +44,10 @@ public class Category implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Set<Product> getProducts() {
+        return products;
     }
 
     @Override
